@@ -1,0 +1,103 @@
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0202024b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #CFB645;
+    
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #000000, -9px -9px 33px #000000;
+    transform: translateY(-2px);
+   }
+   *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #121211;
+    grid-area: header;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+    .navegacao{
+        margin-left: 16%;
+        display: flex;
+        gap: 100px;
+        color: #CFB645;
+        font-weight: bold;
+        p{
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        p:hover{
+            transform: scale(1.1);
+        }
+    }
+.aside1{
+    grid-area: aside1;
+}
+main{
+    grid-area: main;
+    align-items: center;
+    
+    img{
+        width: 400px;
+        display: flex;
+        float: right;
+        margin-left: 500px;
+    }
+    p{
+        text-align: justify;
+        width: 500px;
+        text-indent: 15px;
+    }
+}
+.aside2{
+    grid-area: aside2;
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+    p{
+        color: #CFB645;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5%;
+        text-decoration: underline;
+    }
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside1 main aside2"
+    "footer footer footer";
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 20vh 70vh 10vh;
+    background-color: #d5d3ca;
+}
