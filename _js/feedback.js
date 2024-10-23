@@ -28,7 +28,3 @@ function sair() {
     document.getElementById('botao-login').style.display = 'block'
     document.getElementById('botao-cadastro').style.display = 'block'
 }
-
-function mostrarSuporte() {
-    document.getElementById('suporte').style.display = 'flex'
-}

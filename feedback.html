@@ -3,12 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Agenda</title>
+    <title>Feedback</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='_css/agenda.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/feedback.css'>
     <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
     <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
-    <script src="_js/agenda.js"></script>
+    <script src="_js/feedback.js"></script>
 </head>
 <body>
     <header>
@@ -16,9 +16,9 @@
         <div class="navegacao">
             <a href="home.html"><p>Página Inicial</p></a>
             <a href="galeria.html"><p>Galeria de Imagens</p></a>
-            <p>Agenda</p>
+            <a href="agenda.html"><p>Agenda</p></a>
             <a href="eventos.html"><p>Eventos</p></a>
-            <a href="feedback.html"><p>Feedback</p></a>
+            <p>Feedback</p>
         </div>
         <div class="botoes">
             <a href="login.html" id="botao-login"><button>Entrar</button></a>
@@ -38,7 +38,15 @@
     </header>
     <aside class="aside1"></aside>
     <main>
+        <h1>Escreva seu comentário sobre o nosso projeto abaixo. Aceitamos críticas e elogios!</h1>
+        <br>
+        <form method="get" action="home.html">
+            <textarea id="feedback" required minlength="50">
 
+            </textarea>
+            <br>
+            <input type="submit">
+        </form>
     </main>
     <aside class="aside2"></aside>
     <footer>
