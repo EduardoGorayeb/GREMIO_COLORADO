@@ -16,7 +16,7 @@
     </header>
     <aside class="aside1"></aside>
     <main>
-        <form action="home.html" method="get">
+        <form action="confirmacao.html" method="get">
         <div id="login">
             <h1>Cadastro</h1>
             <div class="espacamento">
@@ -45,13 +45,13 @@
 
             <div class="espacamento">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" minlength="8" required placeholder="Digite sua senha aqui" oninput="checarSenha()">
+                <input type="password" id="senha" minlength="8" required placeholder="Digite sua senha aqui" oninput="checarSenha(), margin()" ><i class="fa-regular fa-eye" id="icone-senha1" onclick="mostrarSenha1()"></i>
                 <span id="avisoSenha"></span>
             </div>
 
             <div class="espacamento">
                 <label for="senha2">Confirmar senha:</label>
-                <input type="password" id="senha2" minlength="8" required placeholder="Confirme sua senha aqui" oninput="confirmarSenha()">
+                <input type="password" id="senha2" minlength="8" required placeholder="Confirme sua senha aqui" oninput="confirmarSenha(), margin()"><i class="fa-regular fa-eye" id="icone-senha2" onclick="mostrarSenha2()"></i>
                 <span id="avisoSenha2">As senhas não coincidem.</span>
             </div>
         </div>

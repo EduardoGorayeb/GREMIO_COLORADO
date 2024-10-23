@@ -54,6 +54,10 @@ header{
     #user-icone{
         color: #CFB645;
         display: none;
+        margin-left: 35px;
+    }
+    #nome-user{
+        margin-left: 30px;
     }
     figure{
         display: flex;
@@ -121,6 +125,8 @@ main{
             background-color: #d5d3ca;
             border-radius: 25px;
             resize: none;
+            padding: 15px;
+            font-size: 16px;
         }
         input{
             width: 200px;
@@ -130,6 +136,11 @@ main{
             font-size: 16px;
             margin-left: 300px;
             cursor: pointer;
+            transition: all 0.5s;
+        }
+        input:hover{
+            opacity: 70%;
+            transform: scale(1.03);
         }
     }
 }

@@ -54,6 +54,10 @@ header{
     #user-icone{
         color: #CFB645;
         display: none;
+        margin-left: 35px;
+    }
+    #nome-user{
+        margin-left: 30px;
     }
     figure{
         display: flex;
@@ -101,6 +105,21 @@ header{
 }
 main{
     grid-area: main;
+    #imagens1, #imagens2{
+        display: flex;
+        gap: 2rem;
+    }
+    img{
+        width: 450px;
+        display: flex;
+        margin: 16px;
+        border-radius: 15px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    img:hover{
+        transform: scale(1.02);
+    }
 }
 .aside2{
     grid-area: aside2;

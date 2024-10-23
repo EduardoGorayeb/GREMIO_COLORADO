@@ -54,6 +54,10 @@ header{
     #user-icone{
         color: #CFB645;
         display: none;
+        margin-left: 35px;
+    }
+    #nome-user{
+        margin-left: 30px;
     }
     figure{
         display: flex;

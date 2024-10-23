@@ -1,45 +1,53 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
 }
-header{
+
+header {
     background-color: #121211;
     grid-area: header;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 15px;
-    a{
+
+    a {
         color: #CFB645;
         text-decoration: none;
         font-size: 20px;
     }
-    i{
+
+    i {
         color: #CFB645;
         font-size: 20px;
         margin-left: 25px;
         margin-top: 15px;
     }
 }
-.aside1{
+
+.aside1 {
     grid-area: aside1;
 }
-main{
+
+main {
     grid-area: main;
     display: flex;
     justify-content: center;
     align-items: center;
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    h1{
+
+    h1 {
         color: #CFB645;
         margin-bottom: 50px;
     }
-    #login{
+
+    #login {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -48,13 +56,15 @@ main{
         width: 600px;
         height: 650px;
         border-radius: 25px;
-        label{
+
+        label {
             color: #d5d3ca;
             display: flex;
             margin-bottom: 4px;
             color: #d5d3ca;
         }
-        input{
+
+        input {
             border: none;
             outline: none;
             background-color: #CFB645;
@@ -63,23 +73,43 @@ main{
             width: 225px;
             height: 25px;
         }
-        input::placeholder{
+
+        input::placeholder {
             color: #645419;
         }
-        span{
+
+        span {
             color: #e5322a;
             font-size: 12px;
             display: none;
         }
+
+        #icone-senha1 {
+            position: absolute;
+            color: #121211;
+            margin-top: 25px;
+            margin-left: 175px;
+            cursor: pointer;
+        }
+
+        #icone-senha2 {
+            position: absolute;
+            color: #121211;
+            margin-top: 25px;
+            margin-left: 175px;
+            cursor: pointer;
+        }
+
+        .espacamento {
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
-    .espacamento{
-        margin-bottom: 8px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
-    #entrar{
+
+    #entrar {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,7 +118,8 @@ main{
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         background-color: #CFB645;
-        input{
+
+        input {
             border: none;
             outline: none;
             background-color: #121211;
@@ -102,19 +133,23 @@ main{
             transition: all 0.5s;
             margin: 15px;
         }
-        input:hover{
+
+        input:hover {
             opacity: 90%;
             transform: scale(1.03);
         }
     }
 }
-.aside2{
+
+.aside2 {
     grid-area: aside2;
 }
-footer{
+
+footer {
     background-color: #121211;
     grid-area: footer;
-    p{
+
+    p {
         color: #CFB645;
         display: flex;
         justify-content: center;
@@ -122,12 +157,13 @@ footer{
         text-decoration: underline;
     }
 }
-body{
+
+body {
     display: grid;
     grid-template-areas:
-    "header header header"
-    "aside1 main aside2"
-    "footer footer footer";
+        "header header header"
+        "aside1 main aside2"
+        "footer footer footer";
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 10vh 80vh 10vh;
     background-color: #d5d3ca;

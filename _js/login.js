@@ -15,3 +15,18 @@ function checarLogin() {
     }
    
 }
+
+function mostrarSenha() {
+    var tipo = document.getElementById('senha')
+
+    if (tipo.type === "password") {
+        tipo.setAttribute('type', 'text')
+
+        document.getElementById('icone-senha').classList.replace('fa-eye', 'fa-eye-slash')
+    }
+    else {
+        tipo.setAttribute('type', 'password')
+
+        document.getElementById('icone-senha').classList.replace('fa-eye-slash', 'fa-eye')
+    }
+}

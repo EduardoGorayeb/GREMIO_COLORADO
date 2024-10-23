@@ -71,6 +71,13 @@ main{
             font-size: 12px;
             display: none;
         }
+        #icone-senha {
+            position: absolute;
+            color: #121211;
+            margin-top: 25px;
+            margin-left: 175px;
+            cursor: pointer;
+        }
     }
     .espacamento{
         margin-bottom: 15px;

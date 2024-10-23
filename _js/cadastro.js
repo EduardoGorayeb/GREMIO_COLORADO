@@ -132,3 +132,42 @@ function checarCadastro() {
 
     return true
 }
+
+function mostrarSenha1() {
+    var tipo = document.getElementById('senha')
+
+    if (tipo.type === "password") {
+        tipo.setAttribute('type', 'text')
+
+        document.getElementById('icone-senha1').classList.replace('fa-eye', 'fa-eye-slash')
+    }
+    else {
+        tipo.setAttribute('type', 'password')
+
+        document.getElementById('icone-senha1').classList.replace('fa-eye-slash', 'fa-eye')
+    }
+}
+
+function mostrarSenha2() {
+    var tipo = document.getElementById('senha2')
+
+    if (tipo.type === "password") {
+        tipo.setAttribute('type', 'text')
+
+        document.getElementById('icone-senha2').classList.replace('fa-eye', 'fa-eye-slash')
+    }
+    else {
+        tipo.setAttribute('type', 'password')
+
+        document.getElementById('icone-senha2').classList.replace('fa-eye-slash', 'fa-eye')
+    }
+}
+
+function margin() {
+    if (document.getElementById('avisoSenha').style.display == 'block') {
+        document.getElementById('icone-senha1').style.marginTop = "12px"
+    }
+    if (document.getElementById('avisoSenha2').style.display == 'block') {
+        document.getElementById('icone-senha2').style.marginTop = "12px"
+    }
+}
