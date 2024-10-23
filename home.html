@@ -6,34 +6,50 @@
     <title>Página Inicial</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='_css/home.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/home.js"></script>
 </head>
 <body>
     <header>
         <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
         <div class="navegacao">
             <p>Página Inicial</p>
-            <p>Galeria de Imagens</p>
-            <p>Agenda</p>
-            <p>Eventos</p>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
         </div>
         <div class="botoes">
-            <a href="login.html"><button>Entrar</button></a>
-            <a href="cadastro.html"><button>Cadastrar-se</button></a>
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
         </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
     </header>
     <aside class="aside1"></aside>
     <main>
         <p>
             O projeto "Grêmio Colorado" é uma iniciativa inovadora voltada para promover a visibilidade e a participação nos eventos escolares por meio de uma plataforma digital. O site web criado pelo grêmio estudantil visa centralizar todas as informações sobre as atividades, projetos e eventos organizados pela escola, facilitando o acesso para toda a comunidade escolar, incluindo alunos, pais, professores e moradores locais.
         </p>
+        <br>
         <p>
             A plataforma permitirá que os usuários consultem o calendário de eventos, conheçam as iniciativas do grêmio e participem de fóruns e enquetes que ajudarão a definir prioridades e novas propostas. Além disso, o site terá uma seção dedicada à divulgação de notícias e fotos dos eventos, criando um espaço virtual que valoriza a interação e o engajamento dos estudantes.
         </p>
-        <div class="imagem">
-            <img src="img/gremio-colorado-grande.png" alt="Logo Grêmio Colorado">
-        </div>
+        <br>
+        <a href="galeria.html"><button class="botao-home"><i class="fa-solid fa-camera"></i>Galeria de Imagens</button></a>
     </main>
-    <aside class="aside2"></aside>
+    <aside class="aside2">
+        <img src="img/gremio-colorado-grande.png" alt="Logo Grêmio Colorado"> 
+    </aside>
     <footer>
         <p>© Todos os direitos reservados - Grêmio Colorado</p>
     </footer>

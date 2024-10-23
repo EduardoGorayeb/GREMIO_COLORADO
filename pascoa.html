@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Páscoa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/pascoa.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/pascoa.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Páscoa</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/pascoa.jpg" alt="Imagem da Páscoa">
+            </div>
+        </div>
+
+        <div id="conteudo-pascoa">
+            <p>A Páscoa é uma das celebrações mais importantes do cristianismo, comemorando a ressurreição de Jesus Cristo após sua crucificação. Esse evento, que marca o triunfo de Jesus sobre a morte, simboliza a renovação, a esperança e a vida nova. A Páscoa é o ponto culminante da Semana Santa, que começa com o Domingo de Ramos e passa pela Quinta-feira Santa (quando ocorreu a Última Ceia) e a Sexta-feira Santa (dia da crucificação).
+            </p><br>
+            <p>Ao longo do tempo, a Páscoa adquiriu uma série de símbolos e tradições que variam de acordo com a cultura de cada país. Um dos mais populares é o coelho da Páscoa, que representa a fertilidade e o renascimento, sendo associado ao início da primavera no hemisfério norte. Outro símbolo amplamente difundido é o ovo de Páscoa, que também remete ao conceito de vida nova e renovação. Nos tempos antigos, os ovos eram pintados e trocados como presentes; hoje, são frequentemente substituídos por ovos de chocolate, especialmente entre crianças.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Páscoa</h1>
+            <p>Dia 21 de Abril de 2025 - Segunda-Feira</p>
+            <p>Abertura às 10h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

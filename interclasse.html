@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Interclasse</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/interclasse.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/interclasse.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Interclasse Grêmio Colorado</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/interclasse.png" alt="Imagem da Interclasse do Grêmio Colorado">
+            </div>
+        </div>
+
+        <div id="conteudo-interclasse">
+            <p>A interclasse é um evento muito comum no ambiente escolar, onde estudantes de diferentes turmas competem entre si em diversas modalidades esportivas ou atividades culturais. É uma oportunidade de integração entre os alunos, incentivando a cooperação, o espírito de equipe e a competitividade saudável. As competições podem variar desde esportes tradicionais, como futebol, vôlei e basquete, até jogos recreativos ou apresentações artísticas.
+            </p><br>
+            <p>Mais do que uma simples disputa, a interclasse promove o desenvolvimento de habilidades sociais e emocionais, como a capacidade de lidar com vitórias e derrotas, o respeito aos adversários e a valorização do trabalho em grupo. Esse tipo de evento também costuma envolver a escola como um todo, criando um clima de união e motivação, onde alunos, professores e funcionários participam ativamente da organização e torcida.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Interclasse</h1>
+            <p>Dias 20, 21 e 22 de Novembro de 2024 - Quarta, Quinta e Sexta-Feira</p>
+            <p>Abertura às 14h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

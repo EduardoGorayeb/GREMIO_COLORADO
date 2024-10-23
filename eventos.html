@@ -6,8 +6,119 @@
     <title>Eventos</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='_css/eventos.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/eventos.js"></script>
 </head>
 <body>
-    
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <p>Eventos</p>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="eventos1">
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Interclasse Grêmio Colorado</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/interclasse.png" alt="Imagem da Interclasse do Grêmio Colorado">
+                    <br>
+                    <p>A Interclasse é um evento muito comum no ambiente escolar...</p>
+                    <br>
+                    <a href="interclasse.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Festa Junina</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/festa-junina.png" alt="Imagem de uma Festa Junina">
+                    <br>
+                    <p>A Festa Junina é uma das celebrações mais tradicionais e alegres...</p>
+                    <br>
+                    <a href="festa-junina.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Dia da Família</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/dia-familia.png" alt="Imagem do Dia da Família">
+                    <br>
+                    <p>O Dia da Família é uma data celebrada para reconhecer a importância...</p>
+                    <br>
+                    <a href="dia-familia.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="eventos2">
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Halloween</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/halloween.png" alt="Imagem da Interclasse do Grêmio Colorado">
+                    <br>
+                    <p>O Halloween, celebrado no dia 31 de Outubro, é uma festividade...</p>
+                    <br>
+                    <a href="halloween.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Páscoa</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/pascoa.jpg" alt="Imagem de uma Festa Junina">
+                    <br>
+                    <p>A Páscoa é uma das celebrações mais importantes do cristianismo, comemorando...</p>
+                    <br><br>
+                    <a href="pascoa.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+            <div id="evento">
+                <div id="titulo-evento">
+                    <p>Dia das Crianças</p>
+                </div>
+                <div id="conteudo-evento">
+                    <img src="img/dia-criancas.jpg" alt="Imagem do Dia da Família">
+                    <br>
+                    <p>O Dia das Crianças, celebrado no Brasil em 12 de outubro, é uma data...</p>
+                    <br>
+                    <a href="dia-criancas.html"><button>Saiba mais</button></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
 </body>
 </html>

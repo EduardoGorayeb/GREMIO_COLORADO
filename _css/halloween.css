@@ -102,59 +102,94 @@ header{
 main{
     grid-area: main;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     p{
-        text-indent: 20px;
         text-align: justify;
-        width: 800px;
+        text-indent: 16px;
     }
-    i{
-        color: #121211;
-        padding: 7px;
+    #conteudo-halloween{
+        margin-left: 2rem;
     }
-    .botao-home {
-        position: relative;
-        padding: 15px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #121211;
-        border: 2px solid #cfb645;
-        cursor: pointer;
-        overflow: hidden;
-        transition: color 0.4s, border-color 0.4s;
-        z-index: 1;
-        background-color: #d5d3ca;
+    #data{
+        background-color: #121211;
+        color: #CFB645;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        p{
+            text-indent: 0px;
+            text-align: center;
+        }
     }
-    .botao-home::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #cfb645;
-        z-index: -1;
-        transition: left 0.4s;
-    }
-    .botao-home:hover::before {
-        left: 0;
+    #evento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #titulo-evento{
+            background-color: #CFB645;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            height: 50px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #conteudo-evento{
+            background-color: #121211;
+            color: #CFB645;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            width: 400px;
+            height: 400px;
+            padding: 2rem;
+            border-radius: 25px;
+            button {
+                position: relative;
+                padding: 8px;
+                font-size: 16px;
+                color: #cfb645;
+                border: 2px solid #cfb645;
+                cursor: pointer;
+                overflow: hidden;
+                transition: color 0.4s;
+                z-index: 1;
+                background-color: #121211;
+            }
+            button:hover{
+                color: #121211;
+            }
+            button::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background-color: #CFB645;
+                z-index: -1;
+                transition: left 0.4s;
+            }
+            button:hover::before {
+                left: 0;
+            }
+            img{
+                width: 400px;
+            }
+        }
     }
 }
 .aside2{
     grid-area: aside2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-        width: 400px;
-        transition: all 0.5s;
-        
-    }
-    img:hover{
-        transform: scale(1.03);
-    }
 }
 footer{
     background-color: #121211;
@@ -173,7 +208,7 @@ body{
     "header header header"
     "aside1 main aside2"
     "footer footer footer";
-    grid-template-columns: 10vw 60vw 30vw;
+    grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 20vh 70vh 10vh;
     background-color: #d5d3ca;
 }

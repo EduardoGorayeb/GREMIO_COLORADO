@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dia da Família</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/dia-familia.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/dia-familia.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Dia da Família</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/dia-familia.png" alt="Imagem do Dia da Família">
+            </div>
+        </div>
+
+        <div id="conteudo-familia">
+            <p>O Dia da Família é uma data celebrada para reconhecer a importância dos laços familiares e valorizar o papel fundamental que a família desempenha na vida de cada indivíduo. Embora não tenha uma data fixa mundialmente, em muitos lugares do Brasil a data é celebrada em 8 de dezembro. Essa comemoração tem o objetivo de reforçar os vínculos afetivos e promover momentos de união, amor e apoio entre os membros da família.
+            </p><br>
+            <p>A família, em suas diversas formas e composições, é o núcleo de afeto, educação e valores essenciais que influenciam diretamente o desenvolvimento pessoal e social de cada um. O Dia da Família nos lembra que esse núcleo vai além do convívio cotidiano, pois é onde se constroem as bases para o respeito, o companheirismo e o acolhimento. Mais do que um laço sanguíneo, a família representa o amparo em momentos de desafios e a celebração nas conquistas.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Dia da Família</h1>
+            <p>Dia 15 de Maio de 2025 - Quinta-Feira</p>
+            <p>Abertura às 14h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

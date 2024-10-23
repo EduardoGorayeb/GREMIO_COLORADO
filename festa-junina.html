@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Festa Junina</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/festa-junina.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/festa-junina.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Festa Junina</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/festa-junina.png" alt="Imagem da Festa Junina">
+            </div>
+        </div>
+
+        <div id="conteudo-fjunina">
+            <p>A festa junina é uma das celebrações mais tradicionais e alegres do Brasil, ocorrendo principalmente no mês de junho em homenagem a três santos populares: São João, Santo Antônio e São Pedro. As raízes dessa festa remontam à Europa medieval, onde se celebrava o solstício de verão com fogueiras e festividades. No Brasil, esses elementos foram incorporados à cultura local e misturados às tradições indígenas e afro-brasileiras, criando uma celebração única e característica.
+            </p><br>
+            <p>Nas festas juninas, o clima de interior e vida no campo é reproduzido através de cenários rústicos, decorações com bandeirinhas coloridas, fogueiras e barracas de comidas típicas. Pratos como canjica, pamonha, milho cozido, bolo de fubá e quentão são alguns dos mais apreciados. A música também é um elemento essencial, com o forró, baião e xote animando as quadrilhas, danças em grupo que encenam um casamento caipira de forma divertida e teatral.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Festa Junina</h1>
+            <p>Dia 12 de Junho de 2025- Quinta-Feira</p>
+            <p>Abertura às 18h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

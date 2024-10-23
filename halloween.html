@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Halloween</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/halloween.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/halloween.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Halloween</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/halloween.png" alt="Imagem de Halloween">
+            </div>
+        </div>
+
+        <div id="conteudo-halloween">
+            <p>O Halloween, celebrado no dia 31 de outubro, é uma festividade de origem celta que ganhou popularidade principalmente nos Estados Unidos, mas também é comemorada em vários países ao redor do mundo. Originalmente chamado de Samhain, esse festival marcava o fim do verão e o início do inverno, quando os celtas acreditavam que o véu entre o mundo dos vivos e o dos mortos estava mais fino, permitindo que os espíritos retornassem à Terra.
+            </p><br>
+            <p>Hoje, o Halloween é marcado por festas à fantasia, decorações sombrias, filmes de terror e atividades como caça às bruxas, casas assombradas e eventos temáticos em escolas e comunidades. A data é especialmente apreciada por crianças, que adoram se fantasiar e sair à noite para pedir doces, mas também por adultos, que entram no clima festivo com muita criatividade.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Halloween</h1>
+            <p>Dia 31 de Outubro de 2024</p>
+            <p>Abertura às 18h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

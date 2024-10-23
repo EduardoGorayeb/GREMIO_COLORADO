@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dia das Crianças</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/dia-criancas.css'>
+    <link rel="shortcut icon" href="img/gremio-colorado-logo.ico">
+    <script src="https://kit.fontawesome.com/7608bbd5a3.js" crossorigin="anonymous"></script>
+    <script src="_js/dia-criancas.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/gremio-colorado-logo.png" alt="Logo Grêmio Colorado">
+        <div class="navegacao">
+            <a href="home.html"><p>Página Inicial</p></a>
+            <a href="galeria.html"><p>Galeria de Imagens</p></a>
+            <a href="agenda.html"><p>Agenda</p></a>
+            <a href="eventos.html"><p>Eventos</p></a>
+        </div>
+        <div class="botoes">
+            <a href="login.html" id="botao-login"><button>Entrar</button></a>
+            <a href="cadastro.html" id="botao-cadastro"><button>Cadastrar-se</button></a>
+        </div>
+        <figure id="figure">
+            <i class="fa-regular fa-user" id="user-icone" onclick="mostrarDados()"></i>
+            <figcaption>
+                <p id="nome-user"></p>
+                <div id="dados">
+                    <p id="email-icone"></p>
+                    <p id="cpf-icone"></p>
+                    <button id="sair-btn" onclick="sair()">Sair</button>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <aside class="aside1"></aside>
+    <main>
+        <div id="evento">
+            <div id="titulo-evento">
+                <p>Dia das Crianças</p>
+            </div>
+            <div id="conteudo-evento">
+                <img src="img/dia-criancas.jpg" alt="Imagem da Interclasse do Grêmio Colorado">
+            </div>
+        </div>
+
+        <div id="conteudo-criancas">
+            <p>O Dia das Crianças, celebrado no Brasil em 12 de outubro, é uma data dedicada a homenagear e valorizar a infância, destacando a importância das crianças na sociedade e promovendo momentos de alegria e diversão para elas. A comemoração foi oficializada em 1924, quando o então deputado Galdino do Valle Filho propôs a criação de um dia específico para celebrar as crianças. Mais tarde, a data foi associada à festividade de Nossa Senhora Aparecida, padroeira do Brasil, celebrada no mesmo dia.
+            </p><br>
+            <p>Para muitas famílias, o Dia das Crianças é um momento especial de celebração, em que os pais procuram presentear seus filhos com brinquedos ou proporcionar experiências que tornem a data inesquecível, como passeios, festas ou atividades lúdicas. No entanto, além dos presentes, o mais importante é a valorização do tempo de qualidade entre adultos e crianças, reforçando laços familiares e promovendo o carinho, a atenção e o cuidado.
+            </p>
+        </div> 
+
+        <div id="data">
+            <h1>Dia das Crianças</h1>
+            <p>Dia 12 de Outubro de 2025 - Domingo</p>
+            <p>Abertura às 10h!</p>
+        </div>
+    </main>
+    <aside class="aside2"></aside>
+    <footer>
+        <p>© Todos os direitos reservados - Grêmio Colorado</p>
+    </footer>
+</body>
+</html>

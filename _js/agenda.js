@@ -28,25 +28,3 @@ function sair() {
     document.getElementById('botao-login').style.display = 'block'
     document.getElementById('botao-cadastro').style.display = 'block'
 }
-
-var interval = 0
-var img = document.querySelectorAll('.img')
-
-img.forEach((img, index) => {
-    if (index !== interval) {
-        img.style.display = 'none'
-    }
-});
-
-var maxSlider = img.length - 1;
-
-setInterval(function () {
-    img[interval].style.display = 'none'
-    interval++
-
-    if (interval > maxSlider) {
-        interval = 0
-    }
-
-    img[interval].style.display = 'block'
-}, 3000)

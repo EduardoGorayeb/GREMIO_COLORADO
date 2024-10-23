@@ -14,14 +14,13 @@ header{
         display: flex;
         align-items: center;
         width: 175px;
-        margin-left: 15px;
     }
     .navegacao{
-        margin-left: 16%;
         display: flex;
         gap: 100px;
         color: #CFB645;
         font-weight: bold;
+        margin-left: 300px;
         p{
             font-size: 20px;
             cursor: pointer;
@@ -41,23 +40,65 @@ header{
         background-color: #CFB645;
         transition: all 0.3s;
         cursor: pointer;
+
     }
     button:hover{
-        background-color: #645419;
-        color: white;
-        text-shadow: 2px 2px 1px black;
+        opacity: 70%;
         font-size: 15px;
         transform: scale(1.03);
     }
     .botoes{
+        margin-left: 200px;
         display: flex;
-        margin-left: 250px;
+    }
+    #user-icone{
+        color: #CFB645;
+        display: none;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #cfb645;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 70px;
+        position: relative;
+        #dados{
+            position: absolute;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 75px;
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            background-color: #CFB645;
+            color: #121211;
+            display: none;
+            top: 125%;
+            transition: all 0.5s;
+            transform: translateX(-25%);
+            #sair-btn{
+                padding: 0px;
+                background-color: #121211;
+                color: #CFB645;
+            }
+            #sair-btn:hover{
+                opacity: 95%;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #CFB645;
     }
 }
 .aside1{
     grid-area: aside1;
 }
-
 main{
     grid-area: main;
 }
@@ -65,7 +106,7 @@ main{
     grid-area: aside2;
 }
 footer{
-    background-color: black;
+    background-color: #121211;
     grid-area: footer;
     p{
         color: #CFB645;
@@ -81,7 +122,7 @@ body{
     "header header header"
     "aside1 main aside2"
     "footer footer footer";
-    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-columns: 10vw 60vw 30vw;
     grid-template-rows: 20vh 70vh 10vh;
     background-color: #d5d3ca;
 }
