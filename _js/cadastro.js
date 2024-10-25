@@ -167,7 +167,13 @@ function margin() {
     if (document.getElementById('avisoSenha').style.display == 'block') {
         document.getElementById('icone-senha1').style.marginTop = "12px"
     }
+    else {
+        document.getElementById('icone-senha1').style.marginTop = "25px"
+    }
     if (document.getElementById('avisoSenha2').style.display == 'block') {
         document.getElementById('icone-senha2').style.marginTop = "12px"
+    }
+    else {
+        document.getElementById('icone-senha2').style.marginTop = "25px"
     }
 }

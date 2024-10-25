@@ -56,8 +56,9 @@ header{
         display: none;
         margin-left: 35px;
     }
-    #nome-user{
-        margin-left: 30px;
+    #user-icone{
+        color: #CFB645;
+        display: none;
     }
     figure{
         display: flex;
@@ -67,7 +68,7 @@ header{
         color: #cfb645;
         cursor: pointer;
         text-align: center;
-        margin-left: 70px;
+        margin-left: 25px;
         position: relative;
         #dados{
             position: absolute;
